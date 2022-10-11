@@ -1,0 +1,24 @@
+Source: libswitch-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Dominic Hargreaves <dom@earth.li>
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libswitch-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libswitch-perl.git
+Homepage: https://metacpan.org/release/Switch
+
+Package: libswitch-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: switch statement for Perl
+ Switch.pm implements a generalized case mechanism that covers many
+ possible combinations of switch and case values.
+ .
+ This is an obsolete module provided for compatiblity since it is being
+ removed from the core. For perl 5.10 and above the "given/when" builtins
+ are much preferred.
+
